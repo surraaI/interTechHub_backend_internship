@@ -2,11 +2,11 @@
 
 ## Simple Node.js Web Server 
 
-Description
+### Description
 
 This project is a basic Node.js web server without using any external libraries like Express. It handles three routes and responds with static messages.
 
-How to Run the Server Locally
+### How to Run the Server Locally
 
 Clone the repository:
 
@@ -20,7 +20,7 @@ Run the server:
 
 node index.js
 
-Open your browser or use a tool like curl to test the following routes:
+### Open your browser or use a tool like curl to test the following routes:
 
 http://localhost:3000/name – Returns "My name is Sura Itana"
 
