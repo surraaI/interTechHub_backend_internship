@@ -1,5 +1,6 @@
 const http = require('http');
-const url = require('url');
+
+const port = process.env.PORT || 3000;
 
 http.createServer((req, res) => {
     if (req.url === '/name') {
@@ -14,6 +15,10 @@ http.createServer((req, res) => {
         res.write('My dream is becoming best software engineer');
         res.end();
     }
-    }).listen(3000, () => {
-    console.log('Server is running on port 3000');
-    });
+    else {
+        res.write('Invalid endpoint');
+        res.end();
+    }
+}).listen(port, '0.0.0.0', () => {
+    console.log(`Server is running on port ${port}`);
+});
